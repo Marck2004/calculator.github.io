@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <form name="seccion">
+    <input type="text" name="resultado" value="" autocomplete="off" readonly>
+    <br>
+    <input type="reset" value="C" id="largo">
+    <input type="button" value="%" id="operador" onclick="document.seccion.resultado.value+='%'">
+    <input type="button" value="/" id="operador" onclick="document.seccion.resultado.value+='/'">
+    <br>
+    <input type="button" value="7" id="botones" onclick="document.seccion.resultado.value+='7'">
+    <input type="button" value="8" id="botones" onclick="document.seccion.resultado.value+='8'">
+    <input type="button" value="9" id="botones" onclick="document.seccion.resultado.value+='9'">
+    <input type="button" value="*" id="operador" onclick="document.seccion.resultado.value+='*'">
+    <br>
+    <input type="button" value="4" id="botones" onclick="document.seccion.resultado.value+='4'">
+    <input type="button" value="5" id="botones" onclick="document.seccion.resultado.value+='5'">
+    <input type="button" value="6" id="botones" onclick="document.seccion.resultado.value+='6'">
+    <input type="button" value="-" id="operador" onclick="document.seccion.resultado.value+='-'">
+    <br>
+    <input type="button" value="1" id="botones" onclick="document.seccion.resultado.value+='1'">
+    <input type="button" value="2" id="botones" onclick="document.seccion.resultado.value+='2'">
+    <input type="button" value="3" id="botones" onclick="document.seccion.resultado.value+='3'">
+    <input type="button" value="+" id="operador" onclick="document.seccion.resultado.value+='+'">
+    <br>
+    <input type="button" value="0" id="largo" onclick="document.seccion.resultado.value+='0'">
+    <input type="button" value="." onclick="document.seccion.resultado.value+='.'">
+    <input type="button" value="=" id="operador" onclick="document.seccion.resultado.value=eval(document.seccion.resultado.value)">
+</form> 
+
+</body>
+
+</html>
